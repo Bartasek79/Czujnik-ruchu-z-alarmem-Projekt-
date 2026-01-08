@@ -1,6 +1,0 @@
-.pio/
-.vscode/
-.atmelstart/
-build/
-*.hex
-*.bin
