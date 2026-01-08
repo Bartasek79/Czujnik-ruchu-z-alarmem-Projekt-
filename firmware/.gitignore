@@ -3,4 +3,5 @@
 .atmelstart/
 build/
 *.hex
+*.elf
 *.bin
