@@ -1,5 +1,5 @@
 # Czujnik ruchu z alarmem
-> Prosty system alarmowy oparty na platformie Arduino, wykorzystujący czujnik ruchu PIR do wykrywania obecności i sygnalizacji zagrożenia.
+> Prosty system alarmowy oparty na platformie AVR ATmega, wykorzystujący czujnik ruchu PIR do wykrywania obecności i sygnalizacji zagrożenia.
 
 ## Spis treści
 * [Informacje ogólne](#informacje-ogólne)
@@ -20,7 +20,7 @@
 ## Użyte technologie
 - Arduino IDE - wersja 1.8+
 - C (język oprogramowania Arduino)
-- Hardware: Arduino Uno/Nano
+- Hardware: ATmega
 - Hardware: Czujnik ruchu PIR (np. HC-SR501)
 - Hardware: Buzzer (głośnik piezoelektryczny)
 - Hardware: Diody LED / Wyświetlacz LCD (zależnie od wersji)
@@ -35,13 +35,13 @@ Główne funkcje projektu:
 ![Schemat układu](./img/schemat.png)
 ## Konfiguracja
 Wymagania sprzętowe i programowe:
-1. Zainstalowane środowisko Arduino IDE.
-2. Mikrokontroler Arduino i odpowiednie podzespoły.
+1. Zainstalowane środowisko AVR ATmega IDE.
+2. Mikrokontroler ATmega i odpowiednie podzespoły.
 
 **Instalacja:**
 1. Sklonuj to repozytorium na swój dysk lokalny.
-2. Otwórz plik projektu (rozszerzenie `.ino`) w Arduino IDE.
-3. Podłącz Arduino do komputera przewodem USB.
+2. Otwórz plik projektu (rozszerzenie `.ino`) w AVR ATmega IDE.
+3. Podłącz AVR do komputera przewodem USB.
 4. Sprawdź w kodzie źródłowym, do których pinów należy podłączyć czujnik, diody i buzzer (zdefiniowane zwykle na początku pliku jako `#define` lub `const int`).
 5. Wgraj wsad do mikrokontrolera.
 
@@ -66,4 +66,4 @@ Do zrobienia:
 
 ## Podziękowania
 - Ten projekt był inspirowany standardowymi przykładami użycia czujnika HC-SR501.
-- Podziękowania dla społeczności Arduino za dokumentację bibliotek.
+- Podziękowania dla społeczności AVR za dokumentację bibliotek.
