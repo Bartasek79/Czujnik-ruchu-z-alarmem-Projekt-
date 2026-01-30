@@ -56,6 +56,7 @@ Jak korzystać z urządzenia:
 - main.c jest odpowiedzialny za uzbrajanie, rozbrajanie, oraz efekty świetlne i dźwiękowe alarmu.
 - timer.c służy do pilnowania poprawnego działania czasomierza.
 - uart.c kontroluje przepływ danych pomiędzy pinami i wyświetla dany stan alarmu.
+##
 **firmware/inc**
 - alarm.h zawiera zmienne stanu alarmu
 - config.h zawiera zmienne dotyczące konfiguracji pinów
