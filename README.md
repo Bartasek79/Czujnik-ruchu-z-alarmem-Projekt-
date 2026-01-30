@@ -40,17 +40,27 @@ Wymagania sprzętowe i programowe:
 
 **Instalacja:**
 1. Sklonuj to repozytorium na swój dysk lokalny.
-2. Otwórz plik projektu (rozszerzenie `.ino`) w AVR ATmega IDE.
+2. Otwórz plik projektu w Visual Studio Code.
 3. Podłącz AVR do komputera przewodem USB.
 4. Sprawdź w kodzie źródłowym, do których pinów należy podłączyć czujnik, diody i buzzer (zdefiniowane zwykle na początku pliku jako `#define` lub `const int`).
-5. Wgraj wsad do mikrokontrolera.
+5. Wgraj wsad do mikrokontrolera za pomocą komendy "makefile" w środowisku Visual Studio.
 
 ## Instrukcja użycia
 Jak korzystać z urządzenia:
 1. Po podłączeniu zasilania, układ potrzebuje chwili na "kalibrację" czujnika PIR (zwykle od 30 do 60 sekund).
 2. W stanie czuwania urządzenie nie wydaje dźwięków.
 3. Po wykryciu ruchu w polu widzenia czujnika, uruchomi się alarm.
-4. `Przykład kodu`: Logika w pętli `loop()` sprawdza stan pinu wejściowego (`digitalRead`) i wysterowuje pin buzzera na stan wysoki (`HIGH`).
+
+## Pliki kodu
+**firmware/src**
+- main.c jest odpowiedzialny za uzbrajanie, rozbrajanie, oraz efekty świetlne i dźwiękowe alarmu.
+- timer.c służy do pilnowania poprawnego działania czasomierza.
+- uart.c kontroluje przepływ danych pomiędzy pinami i wyświetla dany stan alarmu.
+**firmware/inc**
+- alarm.h zawiera zmienne stanu alarmu
+- config.h zawiera zmienne dotyczące konfiguracji pinów
+- timer.h definiuje czasomierz
+- uart.h posiada zmienne dla wyświetlania tekstu
 
 ## Status projektu
 Projekt jest: _w trakcie rozwoju_.
@@ -61,7 +71,6 @@ Obszary, które można ulepszyć w przyszłości:
 - Możliwość ulepszenia 2: Dodanie klawiatury do uzbrajania/rozbrajania alarmu kodem PIN.
 
 Do zrobienia:
-- Zaprojektowanie mapy PIN-ów.
 - Fizyczne przygotowanie mikrokontrolera
 
 ## Podziękowania
