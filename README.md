@@ -19,7 +19,7 @@
 
 ## Użyte technologie
 - Arduino IDE - wersja 1.8+
-- C (język oprogramowania Arduino)
+- C (język oprogramowania Arduino i ATmega)
 - Hardware: ATmega
 - Hardware: Czujnik ruchu PIR (np. HC-SR501)
 - Hardware: Buzzer (głośnik piezoelektryczny)
@@ -32,7 +32,14 @@ Główne funkcje projektu:
 - Sygnalizacja wizualna stanu czuwania oraz stanu alarmowego.
 
 ## Zrzuty ekranu
-![Schemat układu](./img/schemat.png)
+- Schemat modułu zasilającego przez USB.
+![Schemat modułu zasilającego przez USB](./img/zasilanie.png)
+- Schemat modułu mikroprocesora.
+![Schemat modułu mikroprocesora](./img/procesor.png)
+- Schemat modułu czujnika.
+![Schemat modułu czujnika](./img/czujnik.png)
+- Schemat modułu alarmu z buzzerem.
+![Schemat modułu alarmu z buzzerem](./img/alarm.png)
 ## Konfiguracja
 Wymagania sprzętowe i programowe:
 1. Zainstalowane środowisko AVR ATmega IDE.
