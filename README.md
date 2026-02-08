@@ -40,6 +40,9 @@ Główne funkcje projektu:
 ![Schemat modułu czujnika](./img/czujnik.png)
 - Schemat modułu alarmu z buzzerem.
 ![Schemat modułu alarmu z buzzerem](./img/alarm.png)
+- Schemat fizyczny PCB.
+![Schemat fizyczny PCB](./img/PCB.jpg)
+
 ## Konfiguracja
 Wymagania sprzętowe i programowe:
 1. Zainstalowane środowisko AVR ATmega IDE.
