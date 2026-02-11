@@ -74,7 +74,7 @@ Jak korzystać z urządzenia:
 - uart.h posiada zmienne dla wyświetlania tekstu
 
 ## Status projektu
-Projekt jest: _w trakcie rozwoju_.
+Projekt jest: _w trakcie zakończenia. Przewidywany czas zakończenia 13.02.2026_.
 
 ## Możliwości rozwoju
 Obszary, które można ulepszyć w przyszłości:
