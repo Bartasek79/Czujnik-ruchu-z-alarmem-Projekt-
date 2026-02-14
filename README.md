@@ -32,16 +32,9 @@ Główne funkcje projektu:
 - Sygnalizacja wizualna stanu czuwania oraz stanu alarmowego.
 
 ## Zrzuty ekranu
-- Schemat modułu zasilającego przez USB.<br />
-![Schemat modułu zasilającego przez USB](./img/zasilanie.png)
-- Schemat modułu mikroprocesora.<br />
-![Schemat modułu mikroprocesora](./img/procesor.png)
-- Schemat modułu czujnika.<br />
-![Schemat modułu czujnika](./img/czujnik.png)
-- Schemat modułu alarmu z buzzerem.<br />
-![Schemat modułu alarmu z buzzerem](./img/alarm.png)
-- Schemat fizyczny PCB.<br />
-![Schemat fizyczny PCB](./img/PCB.png)
+- Schemat Czujnik ruchu.<br />
+![Schemat Czujnik ruchu](./img/Czujnikruchuschematic.PNG)
+
 - Mapa pinów ATMEGA328P.<br />
 ![Mapa pinów ATMEGA328P](./img/mapapinów.png)
 ### Przypisanie pinów mikrokontrolera
