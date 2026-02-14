@@ -42,6 +42,8 @@ Główne funkcje projektu:
 ![Schemat modułu alarmu z buzzerem](./img/alarm.png)
 - Schemat fizyczny PCB.<br />
 ![Schemat fizyczny PCB](./img/PCB.jpg)
+- Mapa pinów ATMEGA328P.<br />
+![Mapa pinów ATMEGA328P](./img/mapapinów.png)
 
 ## Konfiguracja
 Wymagania sprzętowe i programowe:
