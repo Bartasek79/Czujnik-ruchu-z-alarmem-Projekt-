@@ -46,19 +46,18 @@ Główne funkcje projektu:
 ![Mapa pinów ATMEGA328P](./img/mapapinów.png)
 ### Przypisanie pinów mikrokontrolera
 
-| Pin      | Etykieta | Typ       | Opis funkcjonalny |
-|----------|----------|-----------|-------------------|
-| 1        | RESET    | Wejście   | Sygnał resetujący układ. Podciągnięty do Vcc rezystorem 10 kΩ. Wykorzystywany do programowania oraz manualnego restartu przyciskiem. |
-| 2        | RXD      | I/O       | Port szeregowy UART (odbiornik). Służy do komunikacji z układem CH340G w celu programowania i diagnostyki. |
-| 3        | TXD      | I/O       | Port szeregowy UART (nadajnik). Odpowiada za wysyłanie danych z mikrokontrolera do interfejsu USB. |
-| 4        | Sensor   | Wejście   | Cyfrowe wejście sygnałowe z czujnika ruchu PIR. Stan wysoki informuje o wykryciu obiektu. |
-| 7        | VCC      | Zasilanie | Linia zasilania dodatniego +5 V. |
-| 20       | AVCC     | Zasilanie | Zasilanie bloku przetwornika ADC. |
-| 8        | GND      | Zasilanie | Masa układu (0 V). Wspólny punkt odniesienia dla wszystkich sygnałów. |
-| 22       | GND      | Zasilanie | Masa układu (0 V). |
-| 14       | Dioda    | Wyjście   | Wyjście cyfrowe sterujące diodą sygnalizacyjną LED przez rezystor ograniczający prąd. |
-| 15       | BUZZ     | Wyjście   | Wyjście sterujące bramką tranzystora MOSFET (kluczowanie buzzera). Umożliwia generowanie sygnałów akustycznych. |
-| 17–19   | SPI      | I/O       | Interfejs komunikacyjny (MOSI, MISO, SCK) wyprowadzony na złącze ICSP, służący do programowania ISP. |
+| Pin    | Etykieta | Typ       | Opis funkcjonalny |
+|--------|----------|-----------|-------------------|
+| 1      | RESET    | Wejście   | Sygnał resetujący układ. Podciągnięty do VCC rezystorem 10 kΩ. Wykorzystywany manualnego restartu przyciskiem. |
+| 30     | RXD      | I/O       | Port szeregowy UART (odbiornik). Służy do komunikacji z układem CH340G w celu programowania i diagnostyki. |
+| 31     | TXD      | I/O       | Port szeregowy UART (nadajnik). Odpowiada za wysyłanie danych z mikrokontrolera do interfejsu USB. |
+| 32     | Sensor   | Wejście   | Cyfrowe wejście sygnałowe z czujnika ruchu PIR. Stan wysoki informuje o wykryciu obiektu. |
+| 4, 18  | VCC/AVCC | Zasilanie | Linie zasilania dodatniego +5 V. AVCC zasila dodatkowo blok przetwornika ADC. |
+| 3, 21  | GND      | Zasilanie | Masa układu (0 V). Wspólny punkt odniesienia dla wszystkich sygnałów. |
+| 12     | Dioda    | Wyjście   | Wyjście cyfrowe sterujące diodą sygnalizacyjną LED przez rezystor ograniczający prąd. |
+| 13     | BUZZ     | Wyjście   | Wyjście sterujące bramką tranzystora MOSFET (kluczowanie buzzera). Umożliwia generowanie sygnałów akustycznych. |
+| 15–17 | SPI      | I/O       | Interfejs komunikacyjny (MOSI, MISO, SCK) wyprowadzony na złącze ICSP, służący do programowania ISP. |
+
 
 ## Konfiguracja
 Wymagania sprzętowe i programowe:
